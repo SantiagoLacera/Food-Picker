@@ -1,0 +1,208 @@
+@import url(//fonts.googleapis.com/css?family=Lato:300:400);
+
+body {
+  margin:0;
+}
+
+h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight:300;
+  letter-spacing: 2px;
+  font-size:48px;
+}
+
+
+.header {
+  position:relative;
+  text-align:center;
+  background: linear-gradient(60deg, rgb(221, 42, 18) 0%, rgb(255, 255, 255) 100%);
+  color:white;
+}
+.Logo {
+  overflow: hidden;
+  padding-right:15px;
+  display:inline-block;
+  vertical-align: middle;
+}
+
+.inner-header {
+  height:65vh;
+  width:100%;
+  margin: 0;
+  padding: 0;
+}
+
+.flex { /*Flexbox for containers*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.waves {
+  position:relative;
+  width: 100%;
+  height:15vh;
+  margin-bottom:-7px; /*Fix for safari gap*/
+  min-height:100px;
+  max-height:150px;
+}
+
+.content {
+  position:relative;
+  padding-left: 10px;
+  text-align:center;
+  background-color: white;
+}
+
+/* Animation */
+
+.parallax > use {
+  animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
+}
+.parallax > use:nth-child(1) {
+  animation-delay: -2s;
+  animation-duration: 7s;
+}
+.parallax > use:nth-child(2) {
+  animation-delay: -3s;
+  animation-duration: 10s;
+}
+.parallax > use:nth-child(3) {
+  animation-delay: -4s;
+  animation-duration: 13s;
+}
+.parallax > use:nth-child(4) {
+  animation-delay: -5s;
+  animation-duration: 20s;
+}
+@keyframes move-forever {
+  0% {
+   transform: translate3d(-90px,0,0);
+  }
+  100% { 
+    transform: translate3d(85px,0,0);
+  }
+}
+/*Shrinking for mobile*/
+@media (max-width: 768px) {
+  .waves {
+    height:40px;
+    min-height:40px;
+  }
+  .content {
+    height:30vh;
+  }
+  h1 {
+    font-size:24px;
+  }
+}
+/*---FoodPickIt---*/
+
+
+span.Main-1 {
+  color: red;
+}
+
+span.Main-2 {
+  color: black;
+}
+
+/*Classes*/
+
+span.foodMain {
+  color: red;
+  
+  padding-top: 100p;
+  font-size: 100px;
+  font-family: cursive;
+}
+span.pickItMain {
+  font-size: x-large;
+  font-size: 100px;
+  font-family: cursive;
+}
+
+.hero {
+  
+  padding-top: 100px;
+ 
+}
+
+.bio {
+  font-size: xx-small;
+  text-justify: auto;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bold;
+  padding-top: 80px;
+  color: black;
+ 
+}
+
+
+.nav-item {
+  font-size: medium;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* ID */
+
+#navbarSupportedContent {
+  background-color: rgb(248, 248, 248);
+}
+
+/*---Picker---*/
+
+.hero21 {
+  padding-top: 370px;
+  padding-bottom: 50px;
+  text-align: center;
+  background-color: #d6cf70;
+}
+
+.hero22 {
+  padding-bottom: 370px;
+  padding-top: 50px;
+  text-align: center;
+  background-color: #93a439;
+}
+
+.hero3 {
+  background-image: url("../Images/Background\ img3.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  padding-top: 70px;
+  padding-bottom: 400px;
+  color: rgb(134, 79, 70);
+}
+
+.dropdown {
+  background-image: url("/HTML/Images/Background\ img5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  padding-bottom: 400px;
+  padding-top: 300px;
+  text-align: center;
+}
+
+/* ID */
+#dropdownMenu1 {
+  padding: 30px;
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(143, 131, 21);
+}
+
+#dropdownMenu2 {
+  padding: 30px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+#dropdownMenu3 {
+  padding: 30px;
+  font-size: 25px;
+  font-weight: bold;
+}
